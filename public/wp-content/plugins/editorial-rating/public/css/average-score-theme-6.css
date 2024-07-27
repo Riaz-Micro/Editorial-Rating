@@ -184,7 +184,8 @@
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 2fr 1fr;
-    padding: 20px 20px;
+    padding: 20px 0px;
+    gap: 20px;
 }
 
 .wpas-theme-6 .er6-bottom-area .er6-bottom-col .er6-bottom-left-side {

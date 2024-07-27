@@ -159,8 +159,8 @@ $wpas_author_designation = isset( $wpas_meta_values['wpas-author-designation'] )
 			<?php 
 				if ( $wpas_score_overview ) { 
 					$words = explode(" ", $wpas_score_overview);
-					$shortContent = implode(" ", array_slice($words, 0, 60));
-					if (count($words) > 60) {
+					$shortContent = implode(" ", array_slice($words, 0, 40));
+					if (count($words) > 40) {
 						$shortContentWithEllipsis = $shortContent . '...';
 					} else {
 						$shortContentWithEllipsis = $shortContent;
