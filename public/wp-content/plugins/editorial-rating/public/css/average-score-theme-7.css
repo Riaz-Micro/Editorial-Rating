@@ -42,7 +42,6 @@
     display: inline-block;
     background-color: #309f21;
     transition: 0.5s ease-in-out;
-    margin-top: 20px;
 }
 
 .wpas-theme-7 .er7-button:hover {
@@ -128,7 +127,7 @@
 
 .wpas-theme-7 .er7-header-area .er7-header-area-top .er7-right-side {
     flex-basis: 260px;
-    text-align: end;
+    text-align: center;
     flex-shrink: 0;
 }
 
@@ -155,11 +154,10 @@
 
 .wpas-theme-7 .er7-header-area .er7-header-top-card-area {
     display: flex;
-    flex-wrap: wrap;
     gap: 10px;
     align-items: center;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .wpas-theme-7 .er7-header-area .er7-header-top-card-area .er7-card {
@@ -167,12 +165,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-basis: calc(33.3333333333% - 15px);
+    flex-basis: calc(33.3333333333% - 40px);
+    flex-shrink: 0;
     box-shadow: -3px 3px 10px #00000005;
+    /* border: 1px solid rgba(128, 128, 128, 0.2509803922); */
     background-color: #ffffff;
     border-radius: 10px;
     padding: 12px 15px;
-    flex-shrink: 0;
+    margin-top: 15px;
 }
 
 .wpas-theme-7 .er7-header-area .er7-header-top-card-area .er7-card svg {
@@ -282,47 +282,46 @@
     z-index: 2;
 }
 
-.wpas-theme-7 .er7-features-area {
+.wpas-theme-7 .er7-featurs-area {
     display: flex;
     gap: 24px;
     align-items: flex-start;
     justify-content: space-between;
 }
 
-.wpas-theme-7 .er7-features-area .er7-features-card {
+.wpas-theme-7 .er7-featurs-area .er7-features-card {
     flex-basis: calc(33.3333333333% - 24px);
     flex-shrink: 0;
 }
 
-.wpas-theme-7 .er7-features-area .er7-features-card .wpas--product-img {
+.wpas-theme-7 .er7-featurs-area .er7-features-card .wpas--product-img {
     box-shadow: none;
-    text-align: center;
 }
 
-.wpas-theme-7 .er7-features-area .er7-features-card .wpas--product-img img {
+.wpas-theme-7 .er7-featurs-area .er7-features-card .wpas--product-img img {
     filter: drop-shadow(0px 10px 10px #00000050);
 }
 
-.wpas-theme-7 .er7-features-area .er7-features-card .er7-features-card-title {
+.wpas-theme-7 .er7-featurs-area .er7-features-card .er7-features-card-title {
     margin: 0 0 10px;
     color: #000000;
     font-size: 22px;
     line-height: 1.2;
 }
 
-.wpas-theme-7 .er7-features-area .er7-features-card p {
+.wpas-theme-7 .er7-featurs-area .er7-features-card p {
     font-size: 16px;
     line-height: 1.4;
     color: #333333;
 }
 
-.wpas-theme-7 .er7-features-area .er7-features-card ul {
+.wpas-theme-7 .er7-featurs-area .er7-features-card ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.wpas-theme-7 .er7-features-area .er7-features-card ul li {
+.wpas-theme-7 .er7-featurs-area .er7-features-card ul li {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.63;
@@ -331,7 +330,7 @@
     margin-bottom: 5px;
 }
 
-.wpas-theme-7 .er7-features-area .er7-features-card ul li::before {
+.wpas-theme-7 .er7-featurs-area .er7-features-card ul li::before {
     content: "\2713";
     font-size: 17px;
     color: #000000;
@@ -340,23 +339,23 @@
     top: 0;
 }
 
-.wpas-theme-7 .er7-features-area .er7-features-card ul li:last-child {
+.wpas-theme-7 .er7-featurs-area .er7-features-card ul li:last-child {
     margin-bottom: 0;
 }
 
-.wpas-theme-7 .er7-features-area .er7-features-card.er7-pros .er7-features-card-title {
+.wpas-theme-7 .er7-featurs-area .er7-features-card.er7-pros .er7-features-card-title {
     color: #309f21;
 }
 
-.wpas-theme-7 .er7-features-area .er7-features-card.er7-pros ul li::before {
+.wpas-theme-7 .er7-featurs-area .er7-features-card.er7-pros ul li::before {
     color: #309f21;
 }
 
-.wpas-theme-7 .er7-features-area .er7-features-card.er7-cons .er7-features-card-title {
+.wpas-theme-7 .er7-featurs-area .er7-features-card.er7-cons .er7-features-card-title {
     color: #e43917;
 }
 
-.wpas-theme-7 .er7-features-area .er7-features-card.er7-cons ul li::before {
+.wpas-theme-7 .er7-featurs-area .er7-features-card.er7-cons ul li::before {
     content: "✘";
     color: #e43917;
 }
@@ -380,14 +379,8 @@
     font-size: 32px;
     line-height: 32px;
     font-weight: 700;
-    margin: 0 0 5px;
-}
-
-.wpas-theme-7 .er7-score .er7-score-card h5 sub {
-    font-size: 16px;
-    color: #000;
-    bottom: 0;
-    right: 7px;
+    margin: 0 0 10px;
+    filter: drop-shadow(0px 4px 3px #00000050);
 }
 
 .wpas-theme-7 .er7-score .er7-score-card p {
@@ -415,8 +408,8 @@
 .wpas-theme-7 .er7-info-area {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 20px;
+    justify-content: space-between;
 }
 
 .wpas-theme-7 .er7-info-area .er7-info-card {
@@ -439,10 +432,6 @@
     filter: drop-shadow(0px 4px 3px #00000050);
 }
 
-.wpas-theme-7 .er7-description {
-    border-top: 1px solid #d8d8d8;
-}
-
 .wpas-theme-7 .er7-description #er7-desc-text {
     font-size: 16px;
     line-height: 1.4;
@@ -450,6 +439,7 @@
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 3;
+    /* number of lines to show */
     line-clamp: 3;
     -webkit-box-orient: vertical;
     transition: .5s ease-in-out;
@@ -483,7 +473,7 @@
     background-size: cover;
 }
 
-.wpas-theme-7 .er7-show-more-btn.rotated::after {
+.wpas-theme-7 .er7-show-more-btn.roteted::after {
     transform: rotate(180deg);
     top: 6px;
 }
@@ -577,7 +567,7 @@
         width: 19px;
     }
 
-    .wpas-theme-7 .er7-features-area {
+    .wpas-theme-7 .er7-featurs-area {
         flex-direction: column;
     }
 
@@ -613,22 +603,3 @@
         text-align: left;
     }
 }
-
-
-/* 
-  <!-- Information -->
-  <!-- <div class="er7-info-area er7-sections">
-    <div class="er7-info-card">
-      <p><span class="er7-price"><?php echo $wpas_product_price; ?></span><br> <span>Best price</span></p>
-    </div>
-    <div class="er7-info-card">
-      <p><?php echo $wpas_tag_best_for; ?></p>
-    </div>
-    <div class="er7-info-card">
-      <div class="buttons">
-        <a class="er7-button" href="<?php echo esc_url( $wpas_product_btn_url ); ?>" target="<?php echo ( '1' !== $wpas_product_btn_target ? '_self' : '_blank' ); ?>"<?php echo ( '1' === $wpas_product_btn_nofollow ? ' rel="nofollow"' : '' ); ?>><?php echo esc_html( $wpas_product_btn_txt ); ?></a>
-      </div>
-    </div>
-  </div> -->
-
-*/

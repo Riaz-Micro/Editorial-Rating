@@ -1,133 +1,156 @@
-=== Ultimate Editorial Rating - Rating & Review plugin for Customers and Editor with Pros and Cons (WooCommerce Support) ===
+=== Ultimate Editorial Rating - Best Product Review Plugin With Star Rating System (WooCommerce Support) ===
 Contributors: wpqode, nazmulfeni4, frohadpro
-Tags: rating plugin, review plugin, customer review, product review,  review plugin
+Tags: Product Review, rating, review, customer review, star rating, Review Schema
 Requires at least: 4.5
-Tested up to: 6.5
-Stable tag: 4.0.0
+Tested up to: 6.6
+Stable tag: 5.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Ultimate Editorial Rating: perfect for WordPress/WooCommerce. Enables customer/editor reviews, star ratings, and supports SEO-boosting Review Schema.
+The #1 Best WordPress product review plugin helps you add multi criteria product star rating, increase engagement, improve SEO with google rich data, and get more sales with social proof also.
 
 == Description ==
 
-Get more customer reviews effortlessly with our Ultimate Editorial Rating Wordpress Free plugin.
+Add product reviews effortlessly to your WordPress product posts or pages with our Ultimate Editorial Rating WordPress Free product review plugin.
 
-Enhance the standard review experience with extra features, including Multi-Criteria Rating, Total Score calculation of each point, Review Schema, and Highlight Pros and Cons. Increase engagement, build loyalty, and improve SEO with social proof. 
+Now you can add multi-criteria product rating & reviews for any WordPress post using WordPress product review plugin - Ultimate Editorial Rating. It’s easy to install and has an advanced dashboard that works seamlessly with any WordPress website.
 
 ✨ [__Live Demo__](https://demo.pluginic.com/editorial-rating/ "Editorial Review System (Live Demo Link)") | 📚[__Documentation__](https://pluginic.com/docs/editorial-rating/ "Editorial Rating - Documentation") | 💬[__Support Forum &raquo;__](https://pluginic.com/support/ "Editorial Review System - Support") | 🌟[__Premium Features__](https://pluginic.com/plugins/editorial-rating/ "Premium Features") | 🔥[__Get Pro (30% OFF)&raquo;__](https://pluginic.com/plugins/editorial-rating/ "Get Pro (30% OFF)")
+
+By using our plugin, you can create multiple review criteria for your WordPress product posts or pages, including product quality, features, service aspects, price, pros, cons, and more. These multiple review criteria help users make wise decisions effortlessly. Additionally, users can rate products through comment reviews and visitor star ratings.
+
+The free version allows you to set limited criteria for your product reviews. To add more criteria, you’ll need to upgrade to the premium version of the Ultimate Editorial Rating plugin.
 
 Watch the video for how to use this product review and rating wordpress plugin:
 
 [youtube https://www.youtube.com/watch?v=9x05j2nvemE]
 
-##Best Rating Plugin For wordpress
+## Best Product Review Plugin With Star Rating (WooCommerce Support)
 
-This WordPress Review and Rating plugin is an all-in-one solution for your website to boost your SEO strategy and improve the Google search ranking. The full responsiveness, customizable, and user-friendly interface make this plugin really easy to use, even for beginners. It allows you to show your product rating category, rating widgets, features, product buttons, pros, and cons on your website pages.
+The #1 Best WordPress product review plugin helps you add multi criteria product rating, increase engagement, build loyalty, improve SEO, and get more sales with social proof also.
 
+The Ultimate Editorial Rating is a FREE WordPress product review plugin that enhances WordPress and eCommerce sites with a bundle of awesome features: Multi-criteria star Ratings, Total Score Calculation, Review Schema, Pros and Cons Highlights, and more. Amplify your website’s potential with expert Editorial Ratings and insightful Customer Reviews. Plus, you can  enjoy the added flair of Pros and Cons showcases and eye-catching Rating Widgets to captivate your visitors. 
 
-###🌟 Multi-Criteria Rating and Reviews:
-The plugin supports multi-criteria rating and reviews, allowing users to provide feedback based on various aspects of the product. This feature enables comprehensive insights and a more detailed evaluation of the product's performance, quality, and other relevant factors.  [__See Live Demo__](https://demo.pluginic.com/editorial-rating/editorial-rating-demo-1/ "Editorial Review System (Live Demo Link)")
+##Key Features Of Ultimate Editorial Product Rating Plugin
 
-###🌐 Review Schema Support:
-With review schema support, the plugin enhances the SEO strategy of your website by providing structured data to search engines. This helps search engines understand and display your reviews more effectively, potentially improving your website's visibility and click-through rates in search engine results. [__See Live Demo__](https://demo.pluginic.com/editorial-rating/editorial-rating-demo-4/ "Editorial Review System (Live Demo Link)")
+Have a quick scan at the core features you can get with our plugin-
+
+* Multi-Criteria Rating and Reviews on single posts/pages.
+* Shortcode System
+* 9+ Ready made Review Layout (For Free 1)
+* 7+ Cross / Compare Rating layout  (Pro)
+* Customer Rating options   (Pro)
+* Visitor Rating options    (Pro)
+* Pros and Cons Option
+* Show/hide score on the post.
+* WooCommerce Compatibility (Pro)
+* Review Schema Support
+* Total Score calculation of each point / total rating category.
+* Editorial Rating on the sidebar.
+* Sticky Editorial Rating Sidebar.
+* Rating Widget
+* No coding required
+
+Still not convinced? Allow us to break down these exceptional features for you.
+
+###⭐️  9+ Ready Made Review Layout Design
+The Ultimate Editorial Rating plugin offers over 9 stunning, ready-made review layout designs to make your product reviews stand out. These layouts are carefully crafted to enhance readability and visual appeal, ensuring your reviews look professional and engaging. Whether you prefer a simple star rating or a detailed multi-criteria review, you can easily choose and apply a layout that suits your website's style, making it easy for visitors to digest and appreciate your reviews.  [__See Live Demo__](https://demo.pluginic.com/editorial-rating// "Editorial Review System (Live Demo Link)")
+
+###✨  [7+ Ready Made Cross Rating/Compare Layout Design ]("https://pluginic.com/docs/editorial-cross-rating/"7+ Ready Made Cross Rating/Compare Layout Design  (7+ Ready Made Cross Rating/Compare Layout Design )")
+Our plugin also includes more than 7 pre-designed cross-rating and compare layout options, perfect for comparing multiple products side by side. These layouts allow you to present detailed comparisons with clear, attractive visuals, helping your audience quickly identify the strengths and weaknesses of different products. By using these comparison layouts, you can provide your visitors with valuable insights, facilitating informed purchasing decisions and enhancing user engagement. [__See Live Demo__](https://demo.pluginic.com/editorial-rating/ "Editorial Review System (Live Demo Link)")
+
+###🌟 Multi-Criteria Rating And Reviews
+Multi-criteria ratings and reviews help users provide feedback based on various aspects of the product or service. You can set all the criteria from Wordpress, which reviewers will see on display. With this feature, you can engage visitors to interact with the product on review and gain trust from future visitors. Your path to building strong relationships with visitors starts here!   [__See Live Demo__](https://demo.pluginic.com/editorial-rating/editorial-rating-demo-1/ "Editorial Review System (Live Demo Link)")
+
+###📝 Editorial Rating System:
+The Editorial Rating System allows you to rate the products on multiple criteria. Whether you're an industry expert or a satisfied customer, your firsthand experience brings an impartial perspective, guiding potential buyers toward informed choices. Editorial ratings are crucial to grow audience trust and send professional feedback to businesses addressing areas of improvement.
 
 ###👥 Customer Review:
-Customers can leave their reviews and feedback on the products, sharing their experiences and opinions. This feature encourages customer engagement and helps prospective buyers make informed decisions based on previous customers' experiences. [__See Live Demo__](https://demo.pluginic.com/editorial-rating/editorial-rating-demo-3/ "Editorial Review System (Live Demo Link)")
+Customer reviews are a cornerstone for any brand to outshine its competitors and solidify the brand's reputation. Ultimate Editorial Rating lets genuine product users leave a constructive review on your site. For SEO, this will increase customer engagement on your site, and the visitors can make informed decisions based on previous customers’ experiences. [__See Live Demo__](https://demo.pluginic.com/editorial-rating/editorial-rating-demo-3/ "Editorial Review System (Live Demo Link)")
 
-###📝Editorial Rating System:
-The plugin includes an editorial rating system that allows you to rate and evaluate products within your website's dashboard. This feature provides an overall assessment of specific products, helping users gain a comprehensive understanding of the product's quality and features. With this editorial rating system, you can easily assess and evaluate products, providing users with valuable insights into the quality, performance, and features of the products.
+###⭐️ [__Rating Widget:__](https://pluginic.com/docs/setting-review-rating-widgets/ "Rating Widget (Rating Widget:)")
+With hundreds of affiliate sites reviewing similar products, it's difficult to outrank your competition without a visual appeal. Our plugin will help you add captivating Rating Widgets in the sidebar or footer of your website’s pages. Representing Editorial Product Ratings, these colorful widgets quickly catch the reader’s attention, increase click-through rate, and pursue them to stay on your site longer.  [__See Live Demo__](https://demo.pluginic.com/editorial-rating/editorial-rating-demo-4/ "Editorial Review System (Live Demo Link)")
 
-###⭐️ Rating Widget:
-You can create visually appealing rating widgets that can be placed in the sidebar or footer of your website's pages. These rating widgets, designed to be visually engaging, offer a captivating display of the product's rating. They enhance the user experience by providing an eye-catching representation of the product's rating, making it convenient for visitors to view and assess the rating at a glance. These widgets serve as an attractive and user-friendly way for visitors to quickly evaluate the product's rating and make informed decisions. [__See Live Demo__](https://demo.pluginic.com/editorial-rating/editorial-rating-demo-4/ "Editorial Review System (Live Demo Link)")
+###⭐️[__Visitor Star Rating:__](https://pluginic.com/docs/star-rating/ "Visitor Star Rating: (Visitor Star Rating:)")
 
-###🔘 Product Button:
-By adding product buttons to your review boxes, users can directly access the main product page. This feature allows for smooth navigation, facilitating the purchase process for users.
+The "Star Rating" feature in Editorial Rating Blocks allows you to easily add customizable star ratings to your WordPress website. You can adjust the star appearance, size, color, alignment, and more. To use it, add a new page, select the Star Rating block from the Editorial Rating options, customize your settings, and publish. This feature enhances your site's visual appeal and engages visitors by showcasing reviews and ratings.
 
-###🔄 Regular updates:
-The plugin is regularly updated to ensure optimal performance and incorporate new features. This ensures that your website remains up to date with the latest improvements and enhancements.
+###⭐️[__Review Info Box:__](https://pluginic.com/docs/review-info-box/ "Review Info Box (Review Info Box:)")
 
-###🔌 No coding required:
-You don't need any coding knowledge to use this plugin. Its user-friendly interface and the ability to simply copy and paste provided shortcodes make it easy for anyone to display review boxes on desired pages.
+The Review Info Box feature in the Editorial Rating plugin allows you to add a detailed review summary to your WordPress posts or pages. It includes customizable fields such as review title, rating, summary, and pros and cons. This feature helps highlight key information about the product or service, making it easier for visitors to grasp essential details at a glance.
 
-###🖥️ User-Friendly Interface:
-The plugin's interface is designed to be intuitive and easy to navigate, making it accessible to users of all levels of experience. Whether you are a beginner or an advanced user, you can quickly understand and utilize the plugin's features, creating a seamless experience for managing and showcasing your reviews.
+###📝[__Pricing Table:__](https://pluginic.com/docs/pricing-table/ "Pricing Table (Pricing Table:)")
 
-###🔗 WordPress and WooCommerce Compatibility:
-The Ultimate Editorial Rating plugin seamlessly integrates with both WordPress and WooCommerce, ensuring compatibility with various types of websites. Whether you have a WordPress blog or an e-commerce store powered by WooCommerce, you can effortlessly implement and leverage the plugin's powerful review and rating capabilities. It provides a seamless experience, allowing you to enhance your website's review system, regardless of the type of website you have. Whether you're running a blog, an online store, or a combination of both, the plugin's integration with WordPress and WooCommerce ensures smooth functionality and optimal performance.
+The Pricing Table block in the Editorial Rating plugin enables you to create visually appealing and functional pricing tables for your WordPress website. You can customize various aspects such as colors, icons, and content, making it easy to present different pricing options for products or services.
 
-###🌈 Versatile Review System:
-The plugin provides a versatile review system that caters to various types of websites and businesses. Whether you have an affiliate site, a niche-based blog, or a comprehensive e-commerce platform, the plugin offers the necessary flexibility and features to manage and display your reviews effectively.
+###📊[__Freemium Table:__](https://pluginic.com/docs/freemium-table/ "Freemium Table: (Freemium Table:)")
 
-###🔁 WordPress Review Integration:
-With seamless integration into WordPress, the plugin simplifies the process of posting and managing reviews. It seamlessly integrates with the WordPress dashboard, providing a familiar and streamlined workflow for content creation and review management.
+The Freemium Table feature allows you to display a comparison of free and premium features of your product or service. This helps potential customers understand the benefits of upgrading to a premium plan and make informed decisions.
 
-###💡Smart Product Reviews:
-The plugin includes smart product review features, enabling you to create dynamic and engaging review content. These features allow you to highlight specific product attributes, showcase customer testimonials, and provide in-depth insights into the products, enhancing the overall user experience.
+###🌟[__Review Summary:__](https://pluginic.com/docs/review-summary/ "Review Summary: (Review Summary:)")
 
-###👥 User Engagement:
-By allowing users to leave reviews, the plugin promotes user engagement and interaction with your website. Users can express their opinions, provide feedback, and engage in discussions, fostering a sense of community and credibility around your products or services.
+The Review Summary feature in the Editorial Rating plugin provides a concise overview of the product or service review. It includes ratings, a brief summary, and key points, helping visitors quickly understand the main aspects of the review.
 
-###🔍 Highlight Pros and Cons:
-You can highlight the pros and cons of each product using the plugin. By including these lists within the review boxes, users can quickly assess the strengths and weaknesses of the product, aiding them in their decision-making process.
 
-###🚀 High-quality code:
-The plugin's code is meticulously crafted and optimized to ensure high performance, security, and stability. The developers prioritize delivering a seamless user experience by employing industry best practices and following rigorous coding standards.
+###🔍 Google Rich Schema
+Adding product review schema with the Editorial Rating Review plugin helps your product page get noticed by search engines. This boosts your visibility on Google Search Results Pages (SERP), improving your SEO ranking and making it easier for customers to find your products.  [__See Live Demo__](https://demo.pluginic.com/editorial-rating/editorial-rating-demo-4/ "Editorial Review System (Live Demo Link)")
+
+###🔍 [__Highlight Pros And Cons:__](https://pluginic.com/docs/pros-and-cons/ "Editorial Review System (Highlight Pros And Cons:)")
+Ultimate Editorial Rating lets you create a list of pros and cons for the product under review. This remarkable feature empowers visitors to swiftly navigate through the product's strengths and limitations, enabling seamless comparisons between options. In addition to elevating user experience, the feature also boosts SEO by providing structured, search-engine-friendly pros and cons lists.
+
+###🔘 [__Product Button:__](https://pluginic.com/docs/product-link-button/ "Product Button (Product Button:)")
+A product review is incomplete without a proper call to action. Our plugin lets you add product buttons to your review boxes, redirecting visitors to key product pages like Amazon, Best Buy, Walmart, etc., through affiliate links. Design your site as an enticing journey for your audience, connecting them directly to the products they desire.
+
+###🔗 [__Wordpress And Woocommerce Compatibility:__](https://pluginic.com/docs/pros-and-cons/ "Wordpress And Woocommerce Compatibility (Wordpress And Woocommerce Compatibility:)")
+The ultimate editorial rating plugin is compatible with both wordpress and WooCommerce as well as almost all the latest and popular website themes. For affiliate and blog sites, our plugin will ensure authority and trust and increase traffic with better SEO metrics. eCommerce sites can also get a boost in sales and increased conversion rates with additional ranking benefits. 
+
+###🔄 Regular Updates:
+Our plugin is regularly updated to ensure optimal performance and high responsiveness. We highly recommend you update the plugin for better integration with Wordpress, WooCommerce as well as the website theme. 
 
 ###🌟 Premium support:
 A dedicated team of experts provides premium support for the plugin. You can rely on their assistance to address any questions, issues, or concerns you may have. The support team is available year-round, ensuring that you receive timely and comprehensive assistance when needed.
 
-##Key Features - Ultimate Editorial Rating - Rating & Review plugin
 
-* Multi-Criteria Rating and Reviews on single posts.
-* Show/hide score on the post.
-* Review Schema Support
-* Highlight Pros and Cons
-* Customer Review and Rating 
-* Total Score calculation of each point / total rating category.
-* Category-wise rating system.
-* Category-wise rating range bar.
-* Editorial Rating on the sidebar.
-* Editorial Rating Sidebar sticky.
-* Rating Category
-* Editorial Rating System
-* Rating Widget
-* Product Button
-* Regular updates
-* No coding required
-* User-Friendly Interface
-* WordPress and WooCommerce Compatibility
-* Versatile Review System
-* WordPress Review Integration
-* Smart Product Reviews
+##Why Choose Ultimate Editorial Ratings WordPress Plugin?
 
-## Why You Use Ultimate Editorial Rating Wordpress Plugin On Your Website?
+If you're looking for ways to enhance your website's user experience, build authority and trust, and boost SEO through genuine ratings and reviews, the Ultimate Editorial Ratings is all you need. With our plugin, you get-
 
-Using the **Ultimate Editorial Rating plugin** on your WordPress website offers several benefits and reasons to consider:
+###High-Quality & Secured Coding
+We designed the plugin to ensure optimum performance, high security, and extreme stability. You don’t need any coding knowledge to use this plugin. We ensure delivering a seamless user experience by employing JavaScript and PHP. 
 
-###Improved User Experience: 
-Incorporating an editorial review system enhances the user experience on your website. By providing instant access to product reviews, ratings, pros and cons, and other relevant information, users can make more informed decisions and have a better overall shopping or browsing experience.
+###24/7 Support Team
+We have a dedicated team of experts providing premium support for all users- 24 hours a day, 7 days a week! Any questions you have or any problem you face, you can reach out to our support team to receive timely and comprehensive assistance.
 
-###Boost in SEO and Search Rankings: 
-The plugin supports Review Schema, which helps structure your website's reviews and ratings in a way that search engines understand and appreciate. This can lead to improved search engine rankings, increased visibility in search results, and potentially higher click-through rates.
+###Enhance User Experience
+Incorporating editorial ratings with customer reviews and rating widgets, we have developed a system that takes user experience to the next level. Visitors can instantly access expert opinions, user reviews, pros and cons, and other relevant information from your website before buying a product.
 
-###Increased Credibility and Trust: 
+###Boost In SEO And Search Rankings
+The plugin supports Review Schema, which helps structure your website’s reviews and ratings in a way that search engines understand and present in SERP. Skimmable data boost search engine rankings, increase visibility in search results, and potentially increase click-through rates.
+
+###Gain Credibility And Trust
 Product reviews and ratings play a crucial role in establishing trust and credibility among your audience. By showcasing genuine customer feedback and expert editorial ratings, you create a sense of authenticity and reliability, encouraging users to engage more with your products or services.
 
-###Enhanced Conversion Rates: 
-Positive reviews and higher ratings have a direct impact on conversion rates. When users see favorable reviews and high ratings for a product, they are more likely to proceed with a purchase or take the desired action. The plugin enables you to display these ratings prominently, driving conversions and improving your website's performance.
+###Enhanced Conversion Rates
+Positive reviews and higher ratings combined with appealing widgets play a direct impact on conversion rates. Adding the Product Button will likely convert your audience into potential buyers, helping you earn from affiliate links.
 
-###Engagement and Interactivity: 
-The plugin fosters user engagement by allowing customers to leave their reviews and ratings. This promotes interaction between users, creating a sense of community and providing valuable insights for other potential buyers. Users appreciate the opportunity to share their opinions and experiences, resulting in increased engagement and repeat visits to your website.
+###User Engagement And Interactivity
+The plugin fosters user engagement by allowing customers to leave their reviews and ratings. This promotes user interaction, creating a sense of community and providing valuable insights for other potential buyers. 
 
-###Customization and Flexibility: 
-The plugin offers customization options, allowing you to tailor the review system to match your website's design and branding. You can choose from various display options, customize review categories, and highlight specific product features. This flexibility ensures that the review system seamlessly integrates with your website's aesthetics and overall user interface.
+###Customization And Flexibility Of Use
+The plugin offers customization options and multiple layouts, allowing you to tailor the review system to match your website’s design and branding. You can choose from various display options and colors, review categories and highlight specific product features. This flexibility ensures that the review system seamlessly integrates with your website’s aesthetics and overall user interface.
 
-###Time-Saving and User-Friendly: 
-The plugin provides a user-friendly interface that simplifies the process of managing and displaying reviews on your website. You can easily add, edit, and moderate reviews through the WordPress dashboard, saving you time and effort in managing the review system.
+###User-Friendly Interface
+The plugin provides a user-friendly interface that simplifies managing and displaying reviews on your website. You can easily add, edit, and moderate reviews through the WordPress dashboard, saving time and effort in managing the review system.
 
-###Support and Updates: 
-By using the Editorial Review System plugin, you gain access to ongoing support and updates. The plugin developers are committed to providing regular updates, bug fixes, and improvements to ensure optimal performance and compatibility with the latest WordPress versions. Additionally, if you encounter any issues or have questions, the dedicated support team is available to assist you.
+###Smart Product Review Features
+The plugin includes Smart Product Review features, enabling you to create dynamic and engaging review content. These features allow you to highlight specific product attributes, showcase customer testimonials, and provide in-depth insights into the products, enhancing the overall user experience.
+
+###Wordpress Review Integration
+With seamless integration into wordpress, the plugin simplifies the process of posting and managing reviews from wordpress. It seamlessly integrates with the wordpress dashboard, providing familiar and streamlined content creation and review management workflow.
+
+###Support And Updates
+By using the Editorial Review System plugin, you gain access to ongoing support and updates. The Ultimate Editorial Ratings team is committed to providing regular updates, bug fixes, and improvements to ensure optimal performance and compatibility with the latest WordPress versions. Additionally, the dedicated support team is available to assist you if you encounter any issues or have questions.
+
 
 == Installation ==
 
@@ -196,12 +219,12 @@ No coding knowledge is required to use the Ultimate Editorial Rating plugin. It 
 
 == Screenshots ==
 
-1. Editorial Rating (Demo).
+1. Product Review Plugin (Demo).
 2. Smart Product Review
 3. Multi-criteria Rating & Reviews
 4. Pros and Cons Plugin WordPress
 5. User Rating and Review
-6. Product Review Plugin
+6. Star Rating Plugin
 7. Review Schema Sample
 8. WooCommerce Rating
 
@@ -257,3 +280,7 @@ No coding knowledge is required to use the Ultimate Editorial Rating plugin. It 
 * Improved: Schema markup.
 * Tested: WordPress 6.5 compatibility.
 * Fix: Compatible with PHP 8.3
+
+= 4.0.1 =
+Added: Legacy mode support.
+Tested: WordPress 6.6 compatibility.

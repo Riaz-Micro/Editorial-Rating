@@ -749,8 +749,8 @@ WPAS::createSection(
 			array(
 				'id'       => 'wpas-legacy-active',
 				'type'     => 'switcher',
-				'title'    => 'Enable Legacy Blocks',
-				'desc'     => 'Enable this option to enable the support of our Legacy Blocks on the site.',
+				'title'    => 'Enable Legacy Mode',
+				'desc'     => 'Enable this option to enable the support of our Legacy mode on the site.',
 				'default'  => false
 			),
 		),

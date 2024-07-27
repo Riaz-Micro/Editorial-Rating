@@ -430,18 +430,21 @@
 /* Start ER-Byproduct on selected post types */
 #_wpas_er_byproduct_options .postbox-header .handle-actions {
     margin-left: auto;
+    height: 0;
 }
 #_wpas_er_byproduct_options h2.hndle.ui-sortable-handle {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 20px;
+    padding: 30px 15px 20px 15px;
     color: #fff;
     font-size: 15px;
     border-top: 1px solid #a7fff7;
 }
 #_wpas_er_byproduct_options .postbox-header .handle-actions button {
     border: 1px solid #fff;
+    height: 25px;
+    width: 25px;
 }
 #_wpas_er_byproduct_options .order-higher-indicator::before,
 #_wpas_er_byproduct_options .order-lower-indicator::before,

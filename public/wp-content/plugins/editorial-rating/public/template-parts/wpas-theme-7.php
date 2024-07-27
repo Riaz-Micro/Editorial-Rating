@@ -13,7 +13,6 @@ $wpas_product_gallery     = isset( $wpas_meta_values['wpas-product-image-gallery
 $wpas_product_gallery_ids = explode( ',', $wpas_product_gallery );
 $wpas_product_price       = isset( $wpas_meta_values['wpas-product-price'] ) ? $wpas_meta_values['wpas-product-price'] : '';
 $wpas_tag_best_for        = isset( $wpas_meta_values['wpas-tag-best-for'] ) ? $wpas_meta_values['wpas-tag-best-for'] : '';
-$wpas_feature_list  = isset( $wpas_meta_values['wpas-feature-list'] ) ? $wpas_meta_values['wpas-feature-list'] : '';
 
 // Enqueuing.
 wp_enqueue_style( $this->plugin_name . '-theme-7' );
@@ -48,16 +47,6 @@ if ( $wpas_trmr_percent >= 75 ) {
 	$wpas_trmr_grade = 'Poor';
 	$er_rating_status = '#F44336';
 }
-// Author rating
-if ( $frhd_rate_math_round >= 3.7 ) {
-	$er_rating_status2 = '#4CAF50';
-} elseif ( $frhd_rate_math_round >= 2.5 ) {
-	$er_rating_status2 = '#FFC107';
-} elseif ( $frhd_rate_math_round >= 1.5 ) {
-	$er_rating_status2 = '#FF9800';
-} else {
-	$er_rating_status2 = '#F44336';
-}
 
 // Author Designation.
 $wpas_author_designation = isset( $wpas_meta_values['wpas-author-designation'] ) ? $wpas_meta_values['wpas-author-designation'] : '';
@@ -70,12 +59,15 @@ $wpas_author_designation = isset( $wpas_meta_values['wpas-author-designation'] )
     <div class="er7-header-area-top">
       <div class="er7-left-side">
     <?php 
-      if ( $wpas_product_name_linked ) {
-        echo '<h2 class="er7-title"><a href="' . $wpas_product_btn_url . '" target="' . ( '1' !== $wpas_product_btn_target ? '_self"' : '_blank"' ) . ( '1' === $wpas_product_btn_nofollow ? ' rel="nofollow"' : '' ) . '>' . esc_html( $wpas_score_title ) . '</a></h2>';
-      } else {
-        echo '<h2 class="er7-title">' . esc_html( $wpas_score_title ) . '</h2>';
-      } 
-      ?>
+    if ( $wpas_product_name_linked ) {
+
+      echo '<h2 class="er7-title"><a href="' . $wpas_product_btn_url . '" target="' . ( '1' !== $wpas_product_btn_target ? '_self"' : '_blank"' ) . ( '1' === $wpas_product_btn_nofollow ? ' rel="nofollow"' : '' ) . '>' . esc_html( $wpas_score_title ) . '</a></h2>';
+    } else {
+
+      echo '<h2 class="er7-title">' . esc_html( $wpas_score_title ) . '</h2>';
+    } 
+    ?>
+
         <!-- User Rating -->
         <div class="frhd--user-rating">
           <div class="frhd--rate-cover">
@@ -88,7 +80,7 @@ $wpas_author_designation = isset( $wpas_meta_values['wpas-author-designation'] )
         <div class="er7-date">
           <?php if ( $wpas_editorial_date_show ) : ?>
             <div class="wpas--rating-date">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12" height="12"><path d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z"/></svg>
               <strong><?php echo esc_html( $wpas_editorial_date_label ); ?></strong>
               <?php
               if ( ! empty( $wpas_editorial_date_custom ) ) {
@@ -105,16 +97,18 @@ $wpas_author_designation = isset( $wpas_meta_values['wpas-author-designation'] )
       </div>
     </div>
     <div class="er7-header-top-card-area">
-      <?php
-        foreach ( $wpas_feature_list as $feature ) {
-          echo '
-            <div class="er7-card">
-              <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><rect fill="none" /><path d="M239.2,97.4A16.4,16.4,0,0,0,224.6,86l-59-3.8a.5.5,0,0,1-.4-.3l-22-55.5a16.3,16.3,0,0,0-30.4,0l-22,55.5a.5.5,0,0,1-.4.3L31.4,86A16.4,16.4,0,0,0,16.8,97.4,16.8,16.8,0,0,0,22,115.5l45.2,37.6a.8.8,0,0,1,.2.8L53.9,207a18.6,18.6,0,0,0,7,19.6,18,18,0,0,0,20.1.6l46.9-29.7h.2l50.5,31.9a16.1,16.1,0,0,0,8.7,2.6,16.8,16.8,0,0,0,9.5-3.1,16.6,16.6,0,0,0,6.3-17.7l-14.5-57.3a.8.8,0,0,1,.2-.8L234,115.5A16.8,16.8,0,0,0,239.2,97.4Zm-15.4,5.8-45.3,37.6a16.8,16.8,0,0,0-5.4,17l14.5,57.3c.1.4.1.5,0,.6a.7.7,0,0,1-.3.3h-.2L136.7,184a16,16,0,0,0-8.7-2.5V32c.1,0,.2,0,.3.3l22.1,55.5a16.4,16.4,0,0,0,14.1,10.4l59.1,3.8c.1,0,.2,0,.3.4S223.9,103.1,223.8,103.2Z"/></svg>
-              <span>' . $feature['wpas-feature'] . '</span>
-            </div>
-          ';
-        }
-      ?>
+      <div class="er7-card">
+      <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><rect fill="none" /><path d="M239.2,97.4A16.4,16.4,0,0,0,224.6,86l-59-3.8a.5.5,0,0,1-.4-.3l-22-55.5a16.3,16.3,0,0,0-30.4,0l-22,55.5a.5.5,0,0,1-.4.3L31.4,86A16.4,16.4,0,0,0,16.8,97.4,16.8,16.8,0,0,0,22,115.5l45.2,37.6a.8.8,0,0,1,.2.8L53.9,207a18.6,18.6,0,0,0,7,19.6,18,18,0,0,0,20.1.6l46.9-29.7h.2l50.5,31.9a16.1,16.1,0,0,0,8.7,2.6,16.8,16.8,0,0,0,9.5-3.1,16.6,16.6,0,0,0,6.3-17.7l-14.5-57.3a.8.8,0,0,1,.2-.8L234,115.5A16.8,16.8,0,0,0,239.2,97.4Zm-15.4,5.8-45.3,37.6a16.8,16.8,0,0,0-5.4,17l14.5,57.3c.1.4.1.5,0,.6a.7.7,0,0,1-.3.3h-.2L136.7,184a16,16,0,0,0-8.7-2.5V32c.1,0,.2,0,.3.3l22.1,55.5a16.4,16.4,0,0,0,14.1,10.4l59.1,3.8c.1,0,.2,0,.3.4S223.9,103.1,223.8,103.2Z"/></svg>
+        <span>Sony a5100</span>
+      </div>
+      <div class="er7-card">
+        <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><rect fill="none" /><path d="M239.2,97.4A16.4,16.4,0,0,0,224.6,86l-59-3.8a.5.5,0,0,1-.4-.3l-22-55.5a16.3,16.3,0,0,0-30.4,0l-22,55.5a.5.5,0,0,1-.4.3L31.4,86A16.4,16.4,0,0,0,16.8,97.4,16.8,16.8,0,0,0,22,115.5l45.2,37.6a.8.8,0,0,1,.2.8L53.9,207a18.6,18.6,0,0,0,7,19.6,18,18,0,0,0,20.1.6l46.9-29.7h.2l50.5,31.9a16.1,16.1,0,0,0,8.7,2.6,16.8,16.8,0,0,0,9.5-3.1,16.6,16.6,0,0,0,6.3-17.7l-14.5-57.3a.8.8,0,0,1,.2-.8L234,115.5A16.8,16.8,0,0,0,239.2,97.4Zm-15.4,5.8-45.3,37.6a16.8,16.8,0,0,0-5.4,17l14.5,57.3c.1.4.1.5,0,.6a.7.7,0,0,1-.3.3h-.2L136.7,184a16,16,0,0,0-8.7-2.5V32c.1,0,.2,0,.3.3l22.1,55.5a16.4,16.4,0,0,0,14.1,10.4l59.1,3.8c.1,0,.2,0,.3.4S223.9,103.1,223.8,103.2Z"/></svg>
+        <span>Best Review</span>
+      </div>
+      <div class="er7-card">
+        <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><rect fill="none" /><path d="M239.2,97.4A16.4,16.4,0,0,0,224.6,86l-59-3.8a.5.5,0,0,1-.4-.3l-22-55.5a16.3,16.3,0,0,0-30.4,0l-22,55.5a.5.5,0,0,1-.4.3L31.4,86A16.4,16.4,0,0,0,16.8,97.4,16.8,16.8,0,0,0,22,115.5l45.2,37.6a.8.8,0,0,1,.2.8L53.9,207a18.6,18.6,0,0,0,7,19.6,18,18,0,0,0,20.1.6l46.9-29.7h.2l50.5,31.9a16.1,16.1,0,0,0,8.7,2.6,16.8,16.8,0,0,0,9.5-3.1,16.6,16.6,0,0,0,6.3-17.7l-14.5-57.3a.8.8,0,0,1,.2-.8L234,115.5A16.8,16.8,0,0,0,239.2,97.4Zm-15.4,5.8-45.3,37.6a16.8,16.8,0,0,0-5.4,17l14.5,57.3c.1.4.1.5,0,.6a.7.7,0,0,1-.3.3h-.2L136.7,184a16,16,0,0,0-8.7-2.5V32c.1,0,.2,0,.3.3l22.1,55.5a16.4,16.4,0,0,0,14.1,10.4l59.1,3.8c.1,0,.2,0,.3.4S223.9,103.1,223.8,103.2Z"/></svg>
+        <span>Delivary Free</span>
+      </div>
     </div>
   </div>
 
@@ -170,7 +164,7 @@ $wpas_author_designation = isset( $wpas_meta_values['wpas-author-designation'] )
             <div class="wpas--rating-meter">
               <span class="wpas--rating-bar" style="width: ' . round($rating) . '0%; background-color: ' . $color . ';"></span>
             </div>
-            <span class="wpas--rating-rate" style="color: ' . $color . '!important;"><strong>' . $rating . '.0%</strong></span>
+            <span class="wpas--rating-rate" style="color: ' . $color . '!important;"><strong>' . $rating . '.0</strong></span>
           </div>';
       }
       echo '</div>'; // wpas--rating-categories.
@@ -179,7 +173,7 @@ $wpas_author_designation = isset( $wpas_meta_values['wpas-author-designation'] )
   </div>
 
   <!-- Product pros, cons & overview -->
-  <div class="er7-features-area er7-sections">
+  <div class="er7-featurs-area er7-sections">
     <div class="er7-features-card er7-product-img">
         <?php 
           // Product Image.
@@ -224,34 +218,43 @@ $wpas_author_designation = isset( $wpas_meta_values['wpas-author-designation'] )
   <div class="er7-score er7-sections bg-colored">
     <div class="er7-score-card">
       <?php 
-        echo '<h5 style="color: ' . $er_rating_status . '; ">' . $wpas_total_rating_math_round . ' <sub>/10</sub></h5>';
+        echo '<h5 style="color: ' . $er_rating_status . '; ">' . $wpas_total_rating_math_round . '</h5>';
       ?>
       <p>Total Score</p>
     </div>
     <div class="er7-score-card">
-      <?php 
-        echo '<h5 style="color: ' . $er_rating_status2 . '; ">' . $frhd_rate_math_round . ' <sub>/5 </sub></h5></h5>';
+    <?php 
+        echo '<h5 >' . $frhd_rate_math_round . '</h5>';
       ?>
-      <p>Total <?php echo esc_html( $frhd_total_vote ); ?> reviews</p>
+      <p>Author Rating</p>
     </div>
     <div class="er7-score-card">
     <?php 
-        echo '<h5 >' . $wpas_product_price . '</h5>';
+        echo '<h5 style="color: ' . $er_rating_status . '; ">' . $wpas_trmr_percent . '%</h5>';
       ?>
-      <p>Best Price</p>
+      <p>Total Rating</p>
     </div>
   </div>
 
-
-  <!-- Product Description Area -->
-  <div class="er7-description er7-sections bg-colored">
-    <p id="er7-desc-text"><?php echo $wpas_score_overview; ?></p>
-    <button class="er7-show-more-btn" id="er7_show_more_btn" style="display: none;">Show More</button>
-
-
+  <!-- Information -->
+  <div class="er7-info-area er7-sections">
+    <div class="er7-info-card">
+      <p><span class="er7-price"><?php echo $wpas_product_price; ?></span><br> <span>Best price</span></p>
+    </div>
+    <div class="er7-info-card">
+      <p><?php echo $wpas_tag_best_for; ?></p>
+    </div>
+    <div class="er7-info-card">
       <div class="buttons">
         <a class="er7-button" href="<?php echo esc_url( $wpas_product_btn_url ); ?>" target="<?php echo ( '1' !== $wpas_product_btn_target ? '_self' : '_blank' ); ?>"<?php echo ( '1' === $wpas_product_btn_nofollow ? ' rel="nofollow"' : '' ); ?>><?php echo esc_html( $wpas_product_btn_txt ); ?></a>
       </div>
+    </div>
+  </div>
+
+  <!-- Product Desription Area -->
+  <div class="er7-description er7-sections bg-colored">
+      <p id="er7-desc-text">Lorem ipsum dolor sit amet, consectetur adipisctum interdum, nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Lorem ipsum dolor sit amet, consectetur adipisctum interdum, nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</p>
+      <button class="er7-show-more-btn" id="er7_show_more_btn">Show More</button>
   </div>
   
   <?php if ( $wpas_user_rating_shows ) : ?>
@@ -295,23 +298,6 @@ $wpas_author_designation = isset( $wpas_meta_values['wpas-author-designation'] )
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 
 <script>
-    // check if the description content Quantity
-    document.addEventListener("DOMContentLoaded", function() {
-        var descText = document.getElementById('er7-desc-text');
-        var showMoreBtn = document.getElementById('er7_show_more_btn');
-        var lineHeight = parseInt(window.getComputedStyle(descText).lineHeight);
-        var maxLines = 3;
-        var maxHeight = ((lineHeight * maxLines) + 1);
-        console.log(descText.scrollHeight , maxHeight);
-        if (descText.scrollHeight > maxHeight) {
-            showMoreBtn.style.display = 'block';
-        } else {
-            showMoreBtn.style.display = 'none';
-        }
-    });
-
-
-    // Toggle the description content visibility
     document.addEventListener("DOMContentLoaded", function () {
       let isExpanded = false;
       let mainText = document.getElementById('er7-desc-text');
@@ -321,12 +307,12 @@ $wpas_author_designation = isset( $wpas_meta_values['wpas-author-designation'] )
           mainText.style.webkitLineClamp = "initial";
           mainText.style.lineClamp = "initial";
           togglebtn.innerText = "Show Less";
-          togglebtn.classList.toggle('rotated');
+          togglebtn.classList.toggle('roteted');
         } else {
           mainText.style.webkitLineClamp = "3";
           mainText.style.lineClamp = "3";
           togglebtn.innerText = "Show More";
-          togglebtn.classList.toggle('rotated');
+          togglebtn.classList.toggle('roteted');
         }
         isExpanded = !isExpanded;
       });

@@ -387,7 +387,7 @@
                   }
               ?>
               <?php 
-                if ( $wpas_cr_section_title_show) {
+                if ( ! empty( $er_object->post_title ) && $wpas_cr_section_title_show) {
                     echo '<th>Product Name</th>';
                 }
               ?>

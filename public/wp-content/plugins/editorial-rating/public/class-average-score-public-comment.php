@@ -208,14 +208,20 @@ class WPAS_Editorial_Rating_Public_Comment {
 		$wpas_post_id               = get_the_ID();
 		$wpas_editorial_rating_show = wpas_get_post_meta( $wpas_post_id, 'wpas-editorial-rating-show' );
 		$wpas_editorial_rating      = wpas_get_post_meta( $wpas_post_id, 'wpas-editorial-rating' );
-		$wpas_has_review            = get_comment_meta( $comment->comment_ID, 'wpas_comment_review_switch', true );
-		$wpas_review_heading        = get_comment_meta( $comment->comment_ID, 'wpas_comment_review_headline', true );
+
+		$wpas_has_review = '';
+		if (isset($comment) && $comment !== null) {
+			
+			$comment_ID          = $comment->comment_ID;
+			$wpas_has_review     = get_comment_meta( $comment->comment_ID, 'wpas_comment_review_switch', true );
+			$wpas_review_heading = get_comment_meta( $comment->comment_ID, 'wpas_comment_review_headline', true );
+		}
 
 		ob_start(); // Turn on output buffering.
 
 		echo $text;
 
-		if ( $wpas_has_review ) {
+		if ( ! empty( $wpas_has_review ) ) {
 			?>
 			<h4 class="wpas-cc-rating-headline"><?php echo esc_html( $wpas_review_heading ); ?></h4>
 			<div class="wpas-comment-content-rating">

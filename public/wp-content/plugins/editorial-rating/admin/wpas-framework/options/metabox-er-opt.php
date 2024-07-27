@@ -23,12 +23,12 @@ WPAS::createMetabox(
 		'post_type'    => empty( $wpas_selected_post_types ) ? array( 'post' ) : $wpas_selected_post_types,
 		'show_restore' => false,
 		'context'      => 'side',
-		'class'        => 'wpgper--metabox-erbp-wrap',
+		'class'        => ( 'PRESTIGE' === WPASER_COPY ) ? 'wpgper--metabox-erbp-wrap wpas-copy-pro' : 'wpgper--metabox-erbp-wrap wpas-copy-lite',
 	)
 );
 
 //
-// Section : Appearance.
+// Section : ER Schema & Comment.
 //
 WPAS::createSection(
 	$wpas_prefix_erbp_opts,
@@ -39,7 +39,6 @@ WPAS::createSection(
 				'id'          => 'wpas-cpt-review-selected-for',
 				'type'        => 'select',
 				'title'       => 'Select a review for schema & user review comment data :',
-				'subtitle'    => 'If you don\'t select a review, schema will not get the rating values, & user review comment options not working.',
 				'after'       => '<a href="' . esc_url( get_admin_url() . 'post-new.php?post_type=wpas_review' ) . '" target="_blank">+ Add New Review</a>',
 				'placeholder' => 'Select a review',
 				'chosen'      => true,
@@ -51,6 +50,11 @@ WPAS::createSection(
 				'class'       => 'wpas--db-tar',
 			),
 			array(
+				'type'       => 'content',
+				'content'    => '<div style="padding: 10px;text-align: center;font-size: 14px;background: antiquewhite;border: 4px solid #ffd8a5;border-radius: 3px;">⭐ If you don\'t select a review by its title here, the Schema will not get the rating values. As a result, the Schema will not work. Additionally, the user review comment options will not work if they are activated.</div>',
+				'dependency' => array( 'wpas-cpt-review-selected-for', '==', '' ),
+			),
+			array(
 				'id'         => 'wpas-cpt-schema-shows',
 				'type'       => 'switcher',
 				'title'      => __( 'Show/Hide Schema', 'wpas_editorial_rating' ),
@@ -59,13 +63,14 @@ WPAS::createSection(
 				'text_off'   => 'Hide',
 				'text_width' => 80,
 				'default'    => false,
+				'dependency' => array( 'wpas-cpt-review-selected-for', '!=', '' ),
 			),
 			array(
 				'id'         => 'wpas-cpt-schema-auth-name',
 				'type'       => 'text',
 				'title'      => 'Schema Author Name',
 				'subtitle'   => 'Leave this blank, to get author name from post author in Schema data.',
-				'dependency' => array( 'wpas-cpt-schema-shows', '==', 'true' ),
+				'dependency' => array( 'wpas-cpt-review-selected-for|wpas-cpt-schema-shows', '!=|==', '|true' ),
 			),
 			array(
 				'id'         => 'wpas-cpt-review-comment-allowed',
@@ -76,6 +81,8 @@ WPAS::createSection(
 				'text_off'   => 'Disallowed',
 				'text_width' => 110,
 				'default'    => false,
+				'class'      => 'wpas-field-switcher-pro',
+				'dependency' => array( 'wpas-cpt-review-selected-for', '!=', '' ),
 			),
 		),
 	)

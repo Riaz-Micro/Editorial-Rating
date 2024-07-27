@@ -15,7 +15,7 @@
  * Plugin Name:       Editorial Rating PRO
  * Plugin URI:        https://wpqode.com/plugins/editorial_rating
  * Description:       This plugin allows you to show review scores, pros and cons on individual single page's after content, and sidebar with sticky mode.
- * Version:           4.0.0
+ * Version:           5.0.0
  * Author:            PLUGINIC
  * Author URI:        https://wpqode.com/
  * License:           GPL-2.0+
@@ -34,7 +34,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'WPAS_Editorial_Rating_VERSION', '4.0.0' );
+define( 'WPAS_Editorial_Rating_VERSION', '5.0.0' );
 define( 'WPASER_DIR_PATH_FILE', plugin_dir_path( __FILE__ ) );
 define( 'WPASER_DIR_URL_FILE', plugin_dir_url( __FILE__ ) );
 define( 'WPASER_BASE_FILE', plugin_basename( __FILE__ ) );
