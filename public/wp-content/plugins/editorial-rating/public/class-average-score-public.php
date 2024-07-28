@@ -445,6 +445,60 @@ class WPAS_Editorial_Rating_Public {
 					),
 				),
 			),
+			'wpas-blocks/quick-summary' => array(
+                'title'        => 'Editorial Rating Mini',
+				'editor_style' => 'wpas-editor-style',
+				'attributes'   => array(
+					'id'          => array(
+						'type' => 'string',
+					),
+					'sectionMaxWidth' => array(
+						'type'    => 'string',
+						'default' => '316px',
+					),
+					'score' => array(
+						'type'    => 'number',
+						'default' => 7,
+					),
+                    'headerBackground' => array(
+                        'type'    => 'string',
+                        'default' => '#E43917',
+                    ), 
+				),
+			),
+			'wpas-blocks/progress-circle' => array(
+                'title'            => 'Progress Circle',
+				'editor_style'     => 'wpas-editor-style',
+                'attributes'       => array(
+                    'id'           => array(
+                        'type'         => 'string',
+                    ),
+                    'progressEndValue'       => array(
+                        'type'    => 'number',
+                        'default' => 79,
+                    ),                                                                           
+                    'circleSize'       => array(
+                        'type'    => 'number',
+                        'default' => 150,
+                    ),                                                                           
+                    'circularProgressMaxWidth'       => array(
+                        'type'    => 'string',
+                        'default' => '700px',
+                    ),                                                                           
+                    'progressFontSize'       => array(
+                        'type'    => 'string',
+                        'default' => '20px',
+                    ),                                                                           
+                    'circleFillColor'       => array(
+                        'type'    => 'string',
+                        'default' => '#c5a453',
+                    ),
+                    'innerCircleSize'       => array(
+                        'type'    => 'number',
+                        'default' => 30,
+                    ),                                                                      
+                ),
+            ),
 		);
 
 		foreach ( $blocks as $block_name => $block_data ) {

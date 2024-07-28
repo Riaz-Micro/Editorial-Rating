@@ -19,6 +19,8 @@ import { edit as editLeaderBoard, save as saveLeaderBoard } from './leader-board
 import { edit as editStarTag, save as saveStarTag } from './star-tag';
 import { edit as editInfoCapsule, save as saveInfoCapsule } from './info-capsule';
 import { edit as editQuickSummary, save as saveQuickSummary } from './quick-summary';
+import { edit as editEditorialRating, save as saveEditorialRating } from './editorial-rating';
+import { edit as editEditorialScoreList, save as saveEditorialScoreList } from './editorial-score-list';
 
 const blockSettings = [
     {
@@ -275,6 +277,36 @@ const blockSettings = [
         },
         edit: editQuickSummary,
         save: saveQuickSummary,
+    },
+    {
+        name: 'wpas-blocks/editorial-rating',
+        title: 'Editorial Rating',
+        description: __('This Block showing Editorial Rating.'),
+        category: 'er-block-cat',
+        icon: icons.quickSummary,
+        keywords: [ __( 'progress' ), __( 'circle' ), __( 'editorial' ), __( 'rating' ) ],
+        example: {
+            attributes: {
+                author: 'Forhad',
+            },
+        },
+        edit: editEditorialRating,
+        save: saveEditorialRating,
+    },
+    {
+        name: 'wpas-blocks/editorial-score-list',
+        title: 'Editorial Score List',
+        description: __('This Block showing Editorial Score List.'),
+        category: 'er-block-cat',
+        icon: icons.quickSummary,
+        keywords: [ __( 'progress' ), __( 'circle' ), __( 'editorial' ), __( 'rating' ) ],
+        example: {
+            attributes: {
+                author: 'Forhad',
+            },
+        },
+        edit: editEditorialScoreList,
+        save: saveEditorialScoreList,
     }
 ];
 

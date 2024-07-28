@@ -75,13 +75,13 @@ WPAS::createSection(
 			),
 			array(
 				'type'       => 'content',
-				'content'    => '<img src="' . WPASER_DIR_URL_FILE . 'admin/img/theme-set/demo-5.jpg">',
+				'content'    => '<img src="' . WPASER_DIR_URL_FILE . 'admin/img/theme-set/demo-5.png">',
 				'class'      => 'wpas-theme-prev-list wpas-theme-pro',
 				'dependency' => array( 'wpas-theme-select', '==', 'value-5' ),
 			),
 			array(
 				'type'       => 'content',
-				'content'    => '<img src="' . WPASER_DIR_URL_FILE . 'admin/img/theme-set/demo-6.jpg">',
+				'content'    => '<img src="' . WPASER_DIR_URL_FILE . 'admin/img/theme-set/demo-6.png">',
 				'class'      => 'wpas-theme-prev-list wpas-theme-pro',
 				'dependency' => array( 'wpas-theme-select', '==', 'value-6' ),
 			),

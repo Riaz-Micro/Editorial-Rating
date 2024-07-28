@@ -65,6 +65,12 @@
 
 .wpas-theme-8 .er8-main-container .er8-gallery-area .splide__track--nav .splide__list .splide__slide {
     border: none;
+    height: unset !important;
+    filter: blur(.5px);
+}
+
+.wpas-theme-8 .er8-main-container .er8-gallery-area .splide__track--nav .splide__list .splide__slide.is-visible.is-active {
+    filter: blur(0);
 }
 
 /* Header Area */
