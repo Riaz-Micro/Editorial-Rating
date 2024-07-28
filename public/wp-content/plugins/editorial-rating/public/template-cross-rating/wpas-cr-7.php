@@ -23,6 +23,7 @@
       padding: 10px 15px;
       border: 1px solid #d4d4d4;
       border-radius: 10px;
+      font-size: 16px;
   }
 
   .cr7-filter-area #cr7-searchInput:focus {
@@ -201,6 +202,7 @@
 
   .cr7-table .cr7-table-row .cr7-rating {
       text-align: center;
+      min-width: 100px;
   }
 
   .cr7-table .cr7-table-row .cr7-rating span {
@@ -387,7 +389,7 @@
                   }
               ?>
               <?php 
-                if ( ! empty( $er_object->post_title ) && $wpas_cr_section_title_show) {
+                if ( ! empty( $er_object->post_title ) || $wpas_cr_section_title_show) {
                     echo '<th>Product Name</th>';
                 }
               ?>

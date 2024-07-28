@@ -92,6 +92,7 @@ if ( 'grid' === $wpas_cr_module_2 ) {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 0;
+    padding: 40px;
   }
   .cr3-card .cr3-card-content .cr3-content {
     width: 100%;
@@ -194,7 +195,7 @@ if ( 'grid' === $wpas_cr_module_2 ) {
   .cr3-card .cr3-card-content:hover .cr3-content .cr3-details-content {
     opacity: 1;
     margin-top: 20px;
-    height: 300px;
+    height: 320px;
     overflow-y: auto;
   }
   /* Slider design */
