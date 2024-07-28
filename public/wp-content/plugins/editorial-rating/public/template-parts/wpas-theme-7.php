@@ -272,24 +272,71 @@ $wpas_author_designation = isset( $wpas_meta_values['wpas-author-designation'] )
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-      let isExpanded = false;
-      let mainText = document.getElementById('er7-desc-text');
-      let togglebtn = document.getElementById('er7_show_more_btn');
-      togglebtn.addEventListener("click", function () {
-        if (!isExpanded) {
-          mainText.style.webkitLineClamp = "initial";
-          mainText.style.lineClamp = "initial";
-          togglebtn.innerText = "Show Less";
-          togglebtn.classList.toggle('roteted');
-        } else {
-          mainText.style.webkitLineClamp = "3";
-          mainText.style.lineClamp = "3";
-          togglebtn.innerText = "Show More";
-          togglebtn.classList.toggle('roteted');
+        let isExpanded = false;
+        const mainText = document.getElementById('er7-desc-text');
+        const toggle_btn = document.getElementById('er7_show_more_btn');
+
+        toggle_btn.addEventListener("click", function () {
+            if (!isExpanded) {
+                mainText.style.webkitLineClamp = "initial";
+                mainText.style.lineClamp = "initial";
+                toggle_btn.innerText = "Show Less";
+            } else {
+                mainText.style.webkitLineClamp = "3";
+                mainText.style.lineClamp = "3";
+                toggle_btn.innerText = "Show More";
+            }
+            toggle_btn.classList.toggle('rotated');
+            isExpanded = !isExpanded;
+        });
+
+        function countRenderedLines(text, containerWidth, font) {
+            const canvas = document.createElement('canvas');
+            const context = canvas.getContext('2d');
+            context.font = font;
+
+            let totalRows = 0;
+            let words = text.split(' ');
+            let currentLine = '';
+
+            words.forEach(word => {
+                let testLine = currentLine + word + ' ';
+                let testWidth = context.measureText(testLine).width;
+
+                if (testWidth > containerWidth && currentLine.length > 0) {
+                    totalRows++;
+                    currentLine = word + ' ';
+                } else {
+                    currentLine = testLine;
+                }
+            });
+            if (currentLine.length > 0) {
+                totalRows++;
+            }
+            return totalRows;
         }
-        isExpanded = !isExpanded;
-      });
+
+        function updateLineCount() {
+            const text = mainText.textContent || mainText.innerText;
+            const containerWidth = mainText.clientWidth;
+            const style = window.getComputedStyle(mainText);
+            const font = style.font;
+            const numberOfLines = countRenderedLines(text, containerWidth, font);
+
+            console.log(`Container width: ${containerWidth}`);
+            console.log(`Number of lines: ${numberOfLines}`);
+
+            // Hide the toggle button if the number of lines is less than 3
+            if (numberOfLines <= 3) {
+                toggle_btn.style.display = 'none';
+            } else {
+                toggle_btn.style.display = 'block';
+            }
+        }
+        updateLineCount();
+        window.addEventListener('resize', updateLineCount);
     });
+
 
     // slider js
     document.addEventListener( 'DOMContentLoaded', function () {
