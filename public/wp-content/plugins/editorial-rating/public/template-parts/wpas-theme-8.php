@@ -55,8 +55,9 @@ echo '<style>.frhd--er-meta-container,.frhd-er-progress .frhd-er-progress-value{
 		<div class="splide__track">
 		<ul class="splide__list">
 			<?php
+				echo '<li class="splide__slide"><a class="popup-img" data-gall="gallery01" href="' . $wpas_product_image_url . '"><img src="' . $wpas_product_image_url . '" alt="image"></a></li>';
 				if ( ! empty( $wpas_product_gallery ) ) {
-				foreach ( $wpas_product_gallery_ids as $item_id ) {
+					foreach ( $wpas_product_gallery_ids as $item_id ) {
 					echo '<li class="splide__slide"><a class="popup-img" data-gall="gallery01" href="' . wp_get_attachment_url( $item_id ) . '"><img src="' . wp_get_attachment_url( $item_id ) . '" alt="image"></a></li>';
 				}
 				} else {
@@ -75,6 +76,7 @@ echo '<style>.frhd--er-meta-container,.frhd-er-progress .frhd-er-progress-value{
 		<div class="splide__track">
 		<ul class="splide__list">
 			<?php
+				echo '<li class="splide__slide"><img src="' . $wpas_product_image_url . '"></li>';
 				if ( ! empty( $wpas_product_gallery ) ) {
 				foreach ( $wpas_product_gallery_ids as $item_id ) {
 					echo '<li class="splide__slide"><img src="' . wp_get_attachment_url( $item_id ) . '"></li>';
@@ -199,24 +201,6 @@ echo '<style>.frhd--er-meta-container,.frhd-er-progress .frhd-er-progress-value{
 	</div>
     </div>
     <div class="er8-pros-cons">
-      <div class="er8-pros-cons-col er8-product-img">
-		<?php 
-          // Product Image.
-          if ( $wpas_product_image_url ) {
-            if ( $wpas_product_img_linked ) {
-              echo '<figure>
-                <a href="' . $wpas_product_btn_url . '" target="' . ( '1' !== $wpas_product_btn_target ? '_self"' : '_blank"' ) . ( '1' === $wpas_product_btn_nofollow ? ' rel="nofollow"' : '' ) . '>
-                  <img width="150" height="auto" src="' . esc_url( $wpas_product_image_url ) . '" alt="' . esc_attr( $wpas_product_image_alt ) . '">
-                </a>
-              </figure>';
-            } else {
-              echo '<figure>
-                <img width="150" height="auto" src="' . esc_url( $wpas_product_image_url ) . '" alt="' . esc_attr( $wpas_product_image_alt ) . '">
-              </figure>';
-            }
-          }
-        ?>
-      </div>
       <div class="er8-pros-cons-col er8-pros">
 	  <?php echo'<h4>' . $wpas_pros_label . '</h4>'  ?>
         <ul class="feat-list">

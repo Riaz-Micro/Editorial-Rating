@@ -170,7 +170,7 @@
 
 .wpas-theme-8 .er8-rating-desc .er8-rating {
     flex-shrink: 0;
-    flex-basis: 200px;
+    flex-basis: 250px;
     padding-right: 15px;
     border-right: 1px solid #d3d3d3;
 }
@@ -192,7 +192,7 @@
 }
 
 .wpas-theme-8 .er8-rating-desc .er8-rating ul li span:first-child {
-    flex-basis: 130px;
+    flex-basis: 150px;
     flex-shrink: 0;
 }
 
@@ -257,7 +257,7 @@
 
 .wpas-theme-8 .er8-pros-cons .er8-pros-cons-col {
     flex-shrink: 0;
-    flex-basis: calc(33.3333333333% - 24px);
+    flex-basis: calc(50% - 24px);
 }
 
 .wpas-theme-8 .er8-pros-cons .er8-pros-cons-col h4 {
@@ -280,6 +280,10 @@
     color: #6a6a6a;
     font-size: 16px;
     font-weight: 400;
+}
+
+.wpas-theme-8 .er8-pros-cons .er8-pros-cons-col .feat-list li:last-child {
+    margin-bottom: 0;
 }
 
 .wpas-theme-8 .er8-pros-cons .er8-pros-cons-col .feat-list li::before {
