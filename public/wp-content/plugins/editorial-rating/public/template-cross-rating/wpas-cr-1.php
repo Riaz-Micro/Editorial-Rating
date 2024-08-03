@@ -301,26 +301,21 @@ $layoutClass = '';
         display: block;
         padding: 20px 0px 0px 20px;
     }
-
     .cr1-vertical-layout .wpas-cr-raw-list .wpas-cr-cat-list,
     .cr1-vertical-layout .wpas-cr-raw-list .wpas-cr-pros-cons-list {
         margin-bottom: 20px !important;
     }
-
     .cr1-vertical-layout .wpas-cr-pros-cons-list li,
     .cr1-vertical-layout .wpas-cr-raw-list .wpas-cr-overview {
         position: relative;
         left: -20px;
     }
-
     .cr1-vertical-layout ul.wpas-cr-pros-cons-list li:not(:last-child) {
         margin-bottom: 10px !important;
     }
-
     .cr1-vertical-layout.wpas-cross-rating li {
         margin-bottom: 40px;
     }
-    
     .cr1-vertical-layout.wpas-cross-rating ol > li {
         margin-left: 30px;
     }
@@ -370,7 +365,6 @@ $layoutClass = '';
     }
 <?php
 if ( $wpas_cr_category_list_show ) {
-
     echo '.wpas-product-cont {
         border-bottom: 1px solid #efefef;
         padding-bottom: 10px;
